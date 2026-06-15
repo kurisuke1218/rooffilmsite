@@ -54,10 +54,34 @@ h1{
 }
 
 .status{
-    padding:40px 20px 80px;
+    padding:40px 20px 20px;
     font-size:1.1rem;
     color:#d0d0d0;
     letter-spacing:0.05em;
+}
+
+.links{
+    margin-top:20px;
+}
+
+.links a{
+    color:#d0d0d0;
+    text-decoration:none;
+    border-bottom:1px solid #666;
+    padding-bottom:2px;
+    transition:0.2s;
+}
+
+.links a:hover{
+    color:#ffffff;
+    border-bottom-color:#ffffff;
+}
+
+footer{
+    margin-top:80px;
+    padding:0 20px 30px;
+    font-size:0.8rem;
+    color:#666666;
 }
 
 @media (max-width:768px){
@@ -80,7 +104,10 @@ h1{
 
     .status{
         font-size:1rem;
-        padding:30px 15px 50px;
+    }
+
+    footer{
+        margin-top:60px;
     }
 }
 
@@ -109,7 +136,18 @@ h1{
 
 <div class="status">
     公式サイト準備中
+
+    <div class="links">
+        <p>最新情報はこちら</p>
+        <a href="https://x.com/kuriharu1218" target="_blank">
+            @kuriharu1218
+        </a>
+    </div>
 </div>
+
+<footer>
+    © Roof FilM All Rights Reserved.
+</footer>
 
 </body>
 </html>
