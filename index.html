@@ -15,36 +15,19 @@ body{
 }
 
 .header{
-    padding:60px 20px 40px;
+    padding:50px 20px;
 }
 
 h1{
     font-size:4rem;
-    margin:0 0 20px;
-}
-
-.title{
-    font-size:2rem;
-    margin:20px 0;
-    line-height:1.5;
-}
-
-.director{
-    font-size:1.2rem;
-    margin:10px 0;
-    color:#cccccc;
-}
-
-.status{
-    margin-top:30px;
-    font-size:1.1rem;
-    color:#dddddd;
+    margin:0;
+    font-weight:bold;
 }
 
 .hero{
     width:100%;
     max-width:1200px;
-    margin:0 auto 60px;
+    margin:0 auto;
 }
 
 .hero img{
@@ -53,20 +36,52 @@ h1{
     display:block;
 }
 
+.info{
+    padding:50px 20px 70px;
+}
+
+.director{
+    font-size:1.2rem;
+    color:#cccccc;
+    margin-bottom:20px;
+}
+
+.title{
+    font-size:2.4rem;
+    line-height:1.5;
+    margin-bottom:25px;
+}
+
+.status{
+    font-size:1.1rem;
+    color:#dddddd;
+}
+
 @media (max-width: 768px){
+
+    .header{
+        padding:35px 15px;
+    }
 
     h1{
         font-size:2.5rem;
     }
 
     .title{
-        font-size:1.4rem;
+        font-size:1.5rem;
     }
 
     .director{
         font-size:1rem;
     }
 
+    .status{
+        font-size:1rem;
+    }
+
+    .info{
+        padding:35px 15px 50px;
+    }
 }
 </style>
 </head>
@@ -74,25 +89,27 @@ h1{
 <body>
 
 <div class="header">
+    <h1>Roof Film</h1>
+</div>
 
-    <h1>Roof FilM</h1>
+<div class="hero">
+    <img src="Still0728_00002.png" alt="映画『そばにわたしがずっといる』">
+</div>
 
-    <div class="title">
-        映画『そばにわたしがずっといる』
-    </div>
+<div class="info">
 
     <div class="director">
         栗山陽輔監督作品
+    </div>
+
+    <div class="title">
+        映画『そばにわたしがずっといる』
     </div>
 
     <div class="status">
         公式サイト準備中
     </div>
 
-</div>
-
-<div class="hero">
-    <img src="Still0728_00002.png" alt="映画『そばにわたしがずっといる』">
 </div>
 
 </body>
