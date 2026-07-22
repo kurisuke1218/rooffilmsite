@@ -1,172 +1,196 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NMWPX94ZJV"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-NMWPX94ZJV');
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-NMWPX94ZJV');
 </script>
-
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>映画『そばにわたしがずっといる』 | Roof FilM</title>
-
 <style>
-
+:root{--pink:#d61b7d;}
+*{box-sizing:border-box}
+html,body{margin:0}
 body{
-    margin:0;
-    background:#000;
-    color:#fff;
-    font-family:sans-serif;
-    text-align:center;
+ color:#f2f2f2;
+ font-family:"Yu Gothic","Hiragino Sans","Meiryo",sans-serif;
+ line-height:1.9;
+ background:#000;
 }
 
-.header{
-    padding:60px 20px 40px;
+/* 固定背景レイヤー */
+.bg{
+ position:fixed;
+ inset:0;
+ z-index:-1;
+ background:
+ linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.72)),
+ url("orange_closeup.jpg");
+ background-size:cover;
+ background-position:center center;
+ background-repeat:no-repeat;
 }
 
-h1{
-    margin:0 0 25px;
-    font-size:4.5rem;
-    font-weight:normal;
-    font-family:"Times New Roman", Times, serif;
-    color:#e8e8e8;
+.wrapper{
+ width:min(760px,92%);
+ margin:0 auto;
+ padding:0 40px;
+ background:rgba(0,0,0,.18);
+ backdrop-filter:blur(2px);
 }
 
-.director{
-    font-size:1.1rem;
-    color:#bdbdbd;
-    margin-bottom:15px;
+header{text-align:center;padding:70px 20px 60px;}
+h1{margin:0;font:400 3.2rem "Times New Roman",serif;color:#fff;letter-spacing:.03em;}
+.director{margin-top:22px;color:#cfcfcf;font-size:1.15rem;letter-spacing:.18em;}
+.title{margin-top:24px;font-size:2.2rem;font-weight:300;}
+
+.info{text-align:center;padding-bottom:80px;}
+.info h2,.talk h2{color:var(--pink);font-weight:400;letter-spacing:.08em;}
+.date{font-size:2rem;margin-bottom:20px;}
+.start{font-size:1.45rem;font-weight:bold;}
+.theater a{color:var(--pink);text-decoration:none;}
+.theater a:hover{text-decoration:underline;}
+
+.ticket{
+display:inline-block;
+margin-top:40px;
+padding:16px 54px;
+border:1px solid var(--pink);
+color:var(--pink);
+text-decoration:none;
+transition:.25s;
+}
+.ticket:hover{
+background:var(--pink);
+color:#fff;
+box-shadow:0 0 18px rgba(214,27,125,.35);
 }
 
-.title{
-    font-size:2rem;
-    line-height:1.6;
+.talk{
+text-align:center;
+padding-bottom:70px;
+max-width:620px;
+margin:auto;
 }
 
-.hero{
-    width:100%;
-    max-width:1200px;
-    margin:50px auto;
+.gallery{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:26px;
+padding-bottom:70px;
 }
 
-.hero img{
-    width:100%;
-    height:auto;
-    display:block;
+.gallery img{
+width:100%;
+display:block;
+cursor:pointer;
 }
 
-.info{
-    padding:20px;
+.lightbox{
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.92);
+justify-content:center;
+align-items:center;
+z-index:9999;
 }
-
-.event{
-    font-size:1.5rem;
-    margin-bottom:10px;
-}
-
-.notice{
-    font-size:1.15rem;
-    color:#d0d0d0;
-}
+.lightbox.open{display:flex;}
+.lightbox img{max-width:92%;max-height:92%;}
+.close{position:absolute;top:20px;right:28px;font-size:42px;color:#fff;cursor:pointer;}
+.nav{position:absolute;top:50%;transform:translateY(-50%);font-size:52px;color:#fff;cursor:pointer;padding:20px;}
+.prev{left:20px;}
+.next{right:20px;}
 
 footer{
-    margin-top:80px;
-    padding:0 20px 30px;
-    font-size:0.8rem;
-    color:#666666;
-    line-height:1.8;
+border-top:1px solid rgba(255,255,255,.15);
+color:#888;
+text-align:center;
+padding:35px 0;
+font-size:.9rem;
 }
+footer a{color:#888;text-decoration:none;}
+footer a:hover{color:#fff;text-decoration:underline;}
 
-footer a{
-    color:#888888;
-    text-decoration:none;
+@media(max-width:768px){
+.bg{
+  background:
+  linear-gradient(
+    rgba(0,0,0,.65),
+    rgba(0,0,0,.65)
+  ),
+  url("orange_closeup.jpg");
+  background-size:cover;
+  background-position:55% center;
+  background-repeat:no-repeat;
 }
-
-footer a:hover{
-    text-decoration:underline;
+.wrapper{padding:0 20px;}
+h1{font-size:2.6rem;}
+.title{font-size:1.6rem;}
+.date{font-size:1.6rem;}
+.gallery{grid-template-columns:1fr;}
+.nav{font-size:40px;}
 }
-
-@media (max-width:768px){
-
-    .header{
-        padding:40px 15px 25px;
-    }
-
-    h1{
-        font-size:3rem;
-    }
-
-    .director{
-        font-size:1rem;
-    }
-
-    .title{
-        font-size:1.3rem;
-    }
-
-    .event{
-        font-size:1.2rem;
-    }
-
-    .notice{
-        font-size:1rem;
-    }
-
-    footer{
-        margin-top:60px;
-    }
-
-}
-
 </style>
-
 </head>
-
 <body>
 
-<div class="header">
+<div class="bg"></div>
 
-    <h1>Roof FilM</h1>
+<div class="wrapper">
+<header>
+<h1>Roof FilM</h1>
+<div class="director">栗山陽輔監督作品</div>
+<div class="title">映画『そばにわたしがずっといる』</div>
+</header>
 
-    <div class="director">
-        栗山陽輔監督作品
-    </div>
+<section class="info">
+<h2>上映情報</h2>
+<p class="date">2026年9月20日（日）</p>
+<p>受付・開場　17:30</p>
+<p class="start">開演　18:00</p>
+<p class="theater">会場　<a href="https://www.nanagei.com/" target="_blank">第七藝術劇場</a></p>
+<p>上映時間　41分</p>
+<p>前売・当日　1,900円</p>
+<a class="ticket" href="https://trkr.jp/t/sobairu260920" target="_blank">チケットを予約する</a>
+</section>
 
-    <div class="title">
-        映画『そばにわたしがずっといる』
-    </div>
+<section class="talk">
+<h2>上映後トークイベント</h2>
+<p>映画上映後には、監督・キャストによるトークイベントを予定しております。<br>（約20分予定）</p>
+<p>こちらも合わせてお楽しみください。</p>
+<p>※登壇者は決まり次第お知らせいたします。</p>
+</section>
 
-</div>
-
-<div class="hero">
-    <img src="Still0728_00002.png" alt="映画『そばにわたしがずっといる』コンセプトビジュアル">
-</div>
-
-<div class="info">
-
-    <div class="event">
-        大阪上映会
-    </div>
-
-    <div class="notice">
-        7月下旬 詳細情報公開
-    </div>
-
-</div>
+<section class="gallery">
+<img src="main_visual.jpg" onclick="openLightbox(0)">
+<img src="back_side.jpg" onclick="openLightbox(1)">
+</section>
 
 <footer>
-    <div>© Roof FilM All Rights Reserved.</div>
-
-    <div>
-        <a href="/legal/">特定商取引法に基づく表記</a>
-    </div>
+<div>© Roof FilM All Rights Reserved.</div>
+<div style="margin-top:12px;"><a href="/legal/">特定商取引法に基づく表記</a></div>
 </footer>
+</div>
 
+<div id="lightbox" class="lightbox">
+<div class="close" onclick="closeLightbox()">&times;</div>
+<div class="nav prev" onclick="change(-1)">❮</div>
+<img id="lbimg">
+<div class="nav next" onclick="change(1)">❯</div>
+</div>
+
+<script>
+const imgs=["main_visual.jpg","back_side.jpg"];
+let idx=0;
+function openLightbox(i){idx=i;lbimg.src=imgs[idx];lightbox.classList.add("open");}
+function closeLightbox(){lightbox.classList.remove("open");}
+function change(d){idx=(idx+d+imgs.length)%imgs.length;lbimg.src=imgs[idx];}
+lightbox.onclick=e=>{if(e.target.id==="lightbox")closeLightbox();}
+</script>
 </body>
 </html>
