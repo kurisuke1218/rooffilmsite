@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NMWPX94ZJV"></script>
 <script>
 window.dataLayer=window.dataLayer||[];
@@ -8,45 +9,75 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js',new Date());
 gtag('config','G-NMWPX94ZJV');
 </script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+
 <title>映画『そばにわたしがずっといる』 | Roof FilM</title>
+
 <style>
-:root{--pink:#d61b7d;}
-*{box-sizing:border-box}
-html,body{margin:0}
-body{
- color:#f2f2f2;
- font-family:"Yu Gothic","Hiragino Sans","Meiryo",sans-serif;
- line-height:1.9;
- background:#000;
+
+:root{
+    --pink:#d61b7d;
 }
 
-/* 固定背景レイヤー */
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    color:#f2f2f2;
+    font-family:"Yu Gothic","Hiragino Sans","Meiryo",sans-serif;
+    line-height:1.9;
+    background:#000;
+}
+
 .bg{
- position:fixed;
- inset:0;
- z-index:-1;
- background:
- linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.72)),
- url("orange_closeup.jpg");
- background-size:cover;
- background-position:center center;
- background-repeat:no-repeat;
+    position:fixed;
+    inset:0;
+    z-index:-1;
+    background:
+        linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.72)),
+        url("orange_closeup.jpg");
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
 }
 
 .wrapper{
- width:min(760px,92%);
- margin:0 auto;
- padding:0 40px;
- background:rgba(0,0,0,.18);
- backdrop-filter:blur(2px);
+    width:min(760px,92%);
+    margin:0 auto;
+    padding:0 40px;
+    background:rgba(0,0,0,.18);
+    backdrop-filter:blur(2px);
 }
 
-header{text-align:center;padding:70px 20px 60px;}
-h1{margin:0;font:400 3.2rem "Times New Roman",serif;color:#fff;letter-spacing:.03em;}
-.director{margin-top:22px;color:#cfcfcf;font-size:1.15rem;letter-spacing:.18em;}
-.title{margin-top:24px;font-size:2.2rem;font-weight:300;}
+header{
+    text-align:center;
+    padding:70px 20px 60px;
+}
+
+h1{
+    margin:0;
+    font:400 3.2rem "Times New Roman",serif;
+    color:#fff;
+    letter-spacing:.03em;
+}
+
+.director{
+    margin-top:22px;
+    color:#cfcfcf;
+    font-size:1.15rem;
+    letter-spacing:.18em;
+}
+
+.title{
+    margin-top:24px;
+    font-size:2.2rem;
+    font-weight:300;
+}
+
 .pc{
     display:inline;
 }
@@ -54,166 +85,446 @@ h1{margin:0;font:400 3.2rem "Times New Roman",serif;color:#fff;letter-spacing:.0
 .sp{
     display:none;
 }
-.info{text-align:center;padding-bottom:80px;}
-.info h2,.talk h2{color:var(--pink);font-weight:400;letter-spacing:.08em;}
-.date{font-size:2rem;margin-bottom:20px;}
-.start{font-size:1.45rem;font-weight:bold;}
-.theater a{color:var(--pink);text-decoration:none;}
-.theater a:hover{text-decoration:underline;}
+
+.info{
+    text-align:center;
+    padding-bottom:80px;
+}
+
+.info h2,
+.talk h2{
+    color:var(--pink);
+    font-weight:400;
+    letter-spacing:.08em;
+}
+
+.date{
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+.start{
+    font-size:1.45rem;
+    font-weight:bold;
+}
+
+.theater a{
+    color:var(--pink);
+    text-decoration:none;
+}
+
+.theater a:hover{
+    text-decoration:underline;
+}
 
 .ticket{
-display:inline-block;
-margin-top:40px;
-padding:16px 54px;
-border:1px solid var(--pink);
-color:var(--pink);
-text-decoration:none;
-transition:.25s;
+    display:inline-block;
+    margin-top:40px;
+    padding:16px 54px;
+    border:1px solid var(--pink);
+    color:var(--pink);
+    text-decoration:none;
+    transition:.25s;
 }
+
 .ticket:hover{
-background:var(--pink);
-color:#fff;
-box-shadow:0 0 18px rgba(214,27,125,.35);
+    background:var(--pink);
+    color:#fff;
+    box-shadow:0 0 18px rgba(214,27,125,.35);
 }
 
 .talk{
-text-align:center;
-padding-bottom:70px;
-max-width:620px;
-margin:auto;
+    text-align:center;
+    padding-bottom:70px;
+    max-width:620px;
+    margin:auto;
+}
+
+.speakers{
+    margin-top:30px;
+    line-height:2;
+}
+
+.speakers > div:first-child{
+    color:var(--pink);
+    margin-bottom:8px;
 }
 
 .gallery{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:26px;
-padding-bottom:70px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:26px;
+    padding-bottom:70px;
 }
 
 .gallery img{
-width:100%;
-display:block;
-cursor:pointer;
+    width:100%;
+    display:block;
+    cursor:pointer;
+}
+
+.gallery img:hover{
+    opacity:.9;
 }
 
 .lightbox{
-display:none;
-position:fixed;
-inset:0;
-background:rgba(0,0,0,.92);
-justify-content:center;
-align-items:center;
-z-index:9999;
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.92);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
 }
-.lightbox.open{display:flex;}
-.lightbox img{max-width:92%;max-height:92%;}
-.close{position:absolute;top:20px;right:28px;font-size:42px;color:#fff;cursor:pointer;}
-.nav{position:absolute;top:50%;transform:translateY(-50%);font-size:52px;color:#fff;cursor:pointer;padding:20px;}
-.prev{left:20px;}
-.next{right:20px;}
+
+.lightbox.open{
+    display:flex;
+}
+
+.lightbox img{
+    max-width:92%;
+    max-height:92%;
+}
+
+.close{
+    position:absolute;
+    top:20px;
+    right:28px;
+    font-size:42px;
+    color:#fff;
+    cursor:pointer;
+}
+
+.nav{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:52px;
+    color:#fff;
+    cursor:pointer;
+    padding:20px;
+    user-select:none;
+}
+
+.prev{
+    left:20px;
+}
+
+.next{
+    right:20px;
+}
 
 footer{
-border-top:1px solid rgba(255,255,255,.15);
-color:#888;
-text-align:center;
-padding:35px 0;
-font-size:.9rem;
+    border-top:1px solid rgba(255,255,255,.15);
+    color:#888;
+    text-align:center;
+    padding:35px 0;
+    font-size:.9rem;
 }
-footer a{color:#888;text-decoration:none;}
-footer a:hover{color:#fff;text-decoration:underline;}
+
+footer a{
+    color:#888;
+    text-decoration:none;
+    transition:.2s;
+}
+
+footer a:hover{
+    color:#fff;
+    text-decoration:underline;
+}
+
 
 @media(max-width:768px){
-.bg{
-  background:
-  linear-gradient(
-    rgba(0,0,0,0),
-    rgba(0,0,0,0)
-  ),
-  url("orange_closeup.jpg");
-  background-size:cover;
-  background-position:55% center;
-  background-repeat:no-repeat;
-}
-.wrapper{padding:0 20px;}
-h1{font-size:2.6rem;}
-.title{font-size:1.6rem;}
-.date{font-size:1.6rem;}
-.gallery{grid-template-columns:1fr;}
-.nav{font-size:40px;}
-.pc{
-    display:none;
+
+    .bg{
+        background:
+            linear-gradient(
+                rgba(0,0,0,0),
+                rgba(0,0,0,0)
+            ),
+            url("orange_closeup.jpg");
+        background-size:cover;
+        background-position:55% center;
+        background-repeat:no-repeat;
+    }
+
+    .wrapper{
+        padding:0 20px;
+    }
+
+    h1{
+        font-size:2.6rem;
+    }
+
+    .director{
+        font-size:1rem;
+    }
+
+    .title{
+        font-size:1.6rem;
+    }
+
+    .date{
+        font-size:1.6rem;
+    }
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .nav{
+        font-size:40px;
+    }
+
+    .pc{
+        display:none;
+    }
+
+    .sp{
+        display:inline;
+    }
+
 }
 
-.sp{
-    display:inline;
-}}
 </style>
 </head>
+
+
 <body>
 
 <div class="bg"></div>
 
+
 <div class="wrapper">
+
+
 <header>
+
 <h1>Roof FilM</h1>
-<div class="director">栗山陽輔監督作品</div>
+
+<div class="director">
+栗山陽輔監督作品
+</div>
+
 <div class="title">
 
-    <span class="pc">
-        映画『そばにわたしがずっといる』
-    </span>
+<span class="pc">
+映画『そばにわたしがずっといる』
+</span>
 
-    <span class="sp">
-        映画『そばにわたしが<br>
-        ずっといる』
-    </span>
+<span class="sp">
+映画『そばにわたしが<br>ずっといる』
+</span>
 
 </div>
+
 </header>
 
+
+
 <section class="info">
+
 <h2>上映情報</h2>
-<p class="date">2026年9月20日（日）</p>
-<p>受付・開場　17:30</p>
-<p class="start">開演　18:00</p>
-<p class="theater">会場　<a href="https://www.nanagei.com/" target="_blank">第七藝術劇場</a></p>
-<p>上映時間　41分</p>
-<p>前売・当日　1,900円</p>
-<a class="ticket" href="https://trkr.jp/t/sobairu260920" target="_blank">チケットを予約する</a>
+
+<p class="date">
+2026年9月20日（日）
+</p>
+
+<p>
+受付・開場　17:30
+</p>
+
+<p class="start">
+開演　18:00
+</p>
+
+<p class="theater">
+会場　
+<a href="https://www.nanagei.com/" target="_blank">
+第七藝術劇場
+</a>
+</p>
+
+<p>
+上映時間　41分
+</p>
+
+<p>
+前売・当日　1,900円
+</p>
+
+<a
+class="ticket"
+href="https://trkr.jp/t/sobairu260920"
+target="_blank"
+>
+チケットを予約する
+</a>
+
 </section>
+
+
 
 <section class="talk">
-<h2>上映後トークイベント</h2>
-<p>映画上映後には、監督・キャストによるトークイベントを予定しております。<br>（約20分予定）</p>
-<p>こちらも合わせてお楽しみください。</p>
-<p>※登壇者は決まり次第お知らせいたします。</p>
+
+<h2>
+上映後トークイベント
+</h2>
+
+<p>
+映画上映後には、監督・キャストによるトークイベントを予定しております。<br>
+（約20分予定）
+</p>
+
+<p>
+こちらも合わせてお楽しみください。
+</p>
+
+
+<div class="speakers">
+
+<div>
+【登壇予定】
+</div>
+
+<div>澤井里依</div>
+<div>西村こころ</div>
+<div>丹下真寿美</div>
+<div>山田蟲男</div>
+<div>中村彩衣良</div>
+<div>長谷川陽音</div>
+<div>花田綾衣子</div>
+<div>太田智樹</div>
+<div>栗山陽輔</div>
+
+</div>
+
 </section>
+
+
 
 <section class="gallery">
-<img src="main_visual.jpg" onclick="openLightbox(0)">
-<img src="back_side.jpg" onclick="openLightbox(1)">
+
+<img
+src="main_visual.jpg"
+alt="メインビジュアル"
+onclick="openLightbox(0)"
+>
+
+<img
+src="back_side.jpg"
+alt="フライヤー裏面"
+onclick="openLightbox(1)"
+>
+
 </section>
 
+
+
 <footer>
-<div>© Roof FilM All Rights Reserved.</div>
-<div style="margin-top:12px;"><a href="/legal/">特定商取引法に基づく表記</a></div>
-</footer>
+
+<div>
+© Roof FilM All Rights Reserved.
 </div>
+
+<div style="margin-top:12px;">
+
+<a href="/legal/">
+特定商取引法に基づく表記
+</a>
+
+</div>
+
+</footer>
+
+
+</div>
+
+
 
 <div id="lightbox" class="lightbox">
-<div class="close" onclick="closeLightbox()">&times;</div>
-<div class="nav prev" onclick="change(-1)">❮</div>
-<img id="lbimg">
-<div class="nav next" onclick="change(1)">❯</div>
+
+<div
+class="close"
+onclick="closeLightbox()"
+>
+&times;
 </div>
 
+<div
+class="nav prev"
+onclick="change(-1)"
+>
+❮
+</div>
+
+<img
+id="lbimg"
+src=""
+alt=""
+>
+
+<div
+class="nav next"
+onclick="change(1)"
+>
+❯
+</div>
+
+</div>
+
+
+
 <script>
-const imgs=["main_visual.jpg","back_side.jpg"];
+
+const imgs=[
+    "main_visual.jpg",
+    "back_side.jpg"
+];
+
 let idx=0;
-function openLightbox(i){idx=i;lbimg.src=imgs[idx];lightbox.classList.add("open");}
-function closeLightbox(){lightbox.classList.remove("open");}
-function change(d){idx=(idx+d+imgs.length)%imgs.length;lbimg.src=imgs[idx];}
-lightbox.onclick=e=>{if(e.target.id==="lightbox")closeLightbox();}
+
+
+function openLightbox(i){
+
+    idx=i;
+
+    document.getElementById("lbimg").src=imgs[idx];
+
+    document
+        .getElementById("lightbox")
+        .classList.add("open");
+}
+
+
+function closeLightbox(){
+
+    document
+        .getElementById("lightbox")
+        .classList.remove("open");
+}
+
+
+function change(d){
+
+    idx=(idx+d+imgs.length)%imgs.length;
+
+    document.getElementById("lbimg").src=imgs[idx];
+}
+
+
+document
+    .getElementById("lightbox")
+    .addEventListener("click",e=>{
+
+        if(e.target.id==="lightbox"){
+            closeLightbox();
+        }
+
+    });
+
 </script>
+
+
 </body>
 </html>
